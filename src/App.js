@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MainBar from './components/layout/AppBar';
+import { Router, Route, Switch } from 'react-router-dom';
+import history from './history';
+import { Posts } from './components/posts.component';
+import { CreatePost } from './components/createPost.component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={history}>
+      <MainBar />
+      <Switch>
+      <Route path="/" exact component={Posts}></Route>
+      <Route path="/create-post" exact component={CreatePost}></Route>
+      </Switch>
+    </Router>
   );
 }
 
