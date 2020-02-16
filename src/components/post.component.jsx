@@ -27,7 +27,7 @@ export default function Post() {
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
+                    image="https://iptvmasala.com/wp-content/uploads/2019/04/Sports-IPTV-m3u-playlist.jpg"
                     title="Contemplative Reptile"
                 />
                 <CardContent>
