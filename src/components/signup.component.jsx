@@ -118,7 +118,7 @@ export const Signup = () => {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        color="primary"
+                        color="secondary"
                         className={classes.submit}
                     >
                         Sign Up

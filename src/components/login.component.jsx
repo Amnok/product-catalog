@@ -25,7 +25,6 @@ const useStyles = makeStyles(theme => ({
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        // marginTop: '-65px'
     },
     paper: {
         marginTop: theme.spacing(8),
@@ -90,7 +89,7 @@ export const Login = () => {
                             type="submit"
                             fullWidth
                             variant="contained"
-                            color="primary"
+                            color="secondary"
                             className={classes.submit}
                         >
                             Sign In
