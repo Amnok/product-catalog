@@ -5,7 +5,6 @@ import { Router, Route, Switch } from 'react-router-dom';
 import history from './history';
 import { Posts } from './components/posts.component';
 import { CreatePost } from './components/createPost.component';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Login } from './components/login.component';
 import { Signup } from './components/signup.component';
 
