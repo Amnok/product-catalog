@@ -40,12 +40,12 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center'
   },
   specialOne: {
-    backgroundColor: '#f50057',
+    backgroundColor: '#1d83c6',
     top: '-8px',
     height: '65px',
     color: 'white',
     '&:hover': {
-      background: '#f50057',
+      background: '#1d83c6',
     }
   },
   list: {
