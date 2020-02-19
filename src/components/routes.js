@@ -2,7 +2,7 @@ export default () => {
     return [
         {
             text: 'Posts',
-            link: '/'
+            link: '/posts'
         },
         {
             text: 'Create Post',

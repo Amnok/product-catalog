@@ -14,7 +14,6 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import Drawer from '@material-ui/core/Drawer';
 import InputBase from '@material-ui/core/InputBase';
-import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import SearchIcon from '@material-ui/icons/Search';
 import Badge from '@material-ui/core/Badge';
@@ -98,7 +97,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function MainBar() {
+export default function MainBar(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -181,6 +180,7 @@ export default function MainBar() {
       <Drawer open={state.left} onClose={toggleDrawer('left', false)}>
         {sideList('left')}
       </Drawer>
+      {props.children}
     </div>
   );
 }
