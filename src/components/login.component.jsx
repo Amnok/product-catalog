@@ -92,7 +92,10 @@ export const Login = () => {
                             className={classes.submit}
                         >
                             Sign In
-          </Button>
+                         </Button>
+                        <Link variant="body2" to="/dashboard">
+                            {"login "}
+                        </Link>
                         <Grid container>
                             <Grid item xs>
                                 <Link to="forgot-password" variant="body2">

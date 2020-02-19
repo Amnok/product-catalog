@@ -140,14 +140,11 @@ export const Signup = () => {
                             <Grid item>
                                 <Link to="/login" variant="body2">
                                     Already have an account? Sign in
-              </Link>
+                                </Link>
                             </Grid>
                         </Grid>
                     </form>
                 </div>
-                <Box mt={5}>
-                    <Copyright />
-                </Box>
             </Container>
         </div>
     );

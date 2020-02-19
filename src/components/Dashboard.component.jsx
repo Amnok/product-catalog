@@ -5,13 +5,15 @@ import { CreatePost } from './createPost.component';
 import MainBar from './layout/AppBar';
 
 
-export const Dashboard = () => {
+export const Dashboard = (props) => {
+    console.log("filter ", props);
+
     return (
         <React.Fragment>
             <MainBar />
             <Switch>
-                <Route exact path="/" component={Posts}></Route>
-                <Route exact path="/create-post" component={CreatePost}></Route>
+                <Route exact path={`${props.match.path}`} component={Posts}></Route>
+                <Route path={`${props.match.path}/create-post`} component={CreatePost}></Route>
             </Switch>
         </React.Fragment>
     )

@@ -5,7 +5,7 @@ import history from './history';
 import { Login } from './components/login.component';
 import { Signup } from './components/signup.component';
 import { createMuiTheme } from '@material-ui/core/styles';
-import {ThemeProvider as MuiThemeProvider} from '@material-ui/core/styles';
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import { Dashboard } from './components/Dashboard.component';
 
 const theme = createMuiTheme({
@@ -23,7 +23,7 @@ function App() {
   return (
     <Router history={history}>
       <MuiThemeProvider theme={theme}>
-        <Route path="/" exact component={Dashboard}></Route>
+        <Route path="/dashboard" component={Dashboard}></Route>
         <Route path="/login" exact component={Login}></Route>
         <Route path="/signup" exact component={Signup}></Route>
       </MuiThemeProvider>

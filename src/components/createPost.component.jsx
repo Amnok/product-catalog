@@ -46,7 +46,9 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export const CreatePost = () => {
+export const CreatePost = (props) => {
+    console.log("filter CreatePost", props);
+    
     const classes = useStyles();
     return (
         <div className={classes.container}>

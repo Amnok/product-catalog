@@ -2,11 +2,11 @@ export default () => {
     return [
         {
             text: 'Posts',
-            link: '/posts'
+            link: '/dashboard'
         },
         {
             text: 'Create Post',
-            link: '/create-post'
+            link: '/dashboard/create-post'
         },
         {
             text: 'Create Account',
