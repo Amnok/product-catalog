@@ -24,7 +24,7 @@ function App() {
     <Router history={history}>
       <MuiThemeProvider theme={theme}>
         <Route path="/dashboard" component={Dashboard}></Route>
-        <Route path="/login" exact component={Login}></Route>
+        <Route path="/" exact component={Login}></Route>
         <Route path="/signup" exact component={Signup}></Route>
       </MuiThemeProvider>
     </Router>

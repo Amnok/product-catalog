@@ -14,7 +14,7 @@ export default () => {
         },
         {
             text: 'Logout',
-            link: '/login'
+            link: '/'
         },
     ]
 };
